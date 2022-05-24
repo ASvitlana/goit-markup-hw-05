@@ -52,7 +52,7 @@
                 <h1 class="cap-tiitle">
                     Эффективные решения для вашего бизнеса
                 </h1>
-                <button type="button" class="primery-buttton">
+                <button data-modal-open type="button" class="primery-buttton">
                     Заказать услугу
                 </button>
             </div>
@@ -409,5 +409,13 @@
             </div>
         </div>
     </footer>
+    <div data-modal class="backdrop is-hidden container">
+        <div class="modal">
+            <button data-modal-close class="close">
+                <img src="./images/close.svg" width="30px" height="30px"></img>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

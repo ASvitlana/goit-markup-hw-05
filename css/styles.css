@@ -244,6 +244,8 @@ img {
     background-color: rgba(24, 140, 232, 1);
 }
 
+
+
 /* ---------------------СЕКЦИЯ ОСОБЕННОСТИ-------------------- */
 
 .specialty-list {
@@ -558,6 +560,13 @@ img {
     opacity: 0;
 }
 
+/* .card-text {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+} */
+
 .projects-item:hover::before {
     opacity: 1;
 }
@@ -663,4 +672,43 @@ img {
 .networks-link:hover,
 .networks-link:focus {
     background-color: var(--blue-color);
+}
+
+
+/* -----------МОДАЛЬНОЕ ОКНО------------- */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0;
+    bottom: 0;
+    width: 1600px;
+    height: 1024px;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 99999;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 528px;
+    min-height: 581px;
+    background-color: var(--white-color);
+}
+
+.close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: var(--white-color);
+    border: 0;
+    padding: 0;
 }
